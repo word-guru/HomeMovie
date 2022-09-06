@@ -1,0 +1,30 @@
+﻿@page "/Movies"
+@model HomeMovie.Pages.MoviesModel
+@{
+    ViewData["Title"] = "Posters";
+}
+
+<div class="text-centr">
+    <h1 class="display-4">Movies</h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>Title</th>          
+            <th>Session</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var movie in Model._movies)
+    {
+        <tr>
+            <td>@movie.Name</td>
+           
+                @foreach(var _time in movie.Session)
+                {
+                    <td>@_time</td>
+                }
+        </tr>
+    }
+</table>
