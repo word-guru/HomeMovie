@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32804.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMovie", "HomeMovie\HomeMovie.csproj", "{67C22C77-C100-4DFD-B690-C2251F03C635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeMovie", "HomeMovie\HomeMovie.csproj", "{67C22C77-C100-4DFD-B690-C2251F03C635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMovie.Models", "HomeMovie.Models\HomeMovie.Models.csproj", "{154D3FDD-D4BE-4274-8D6C-67F4D2631900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMovie.Services", "HomeMovie.Services\HomeMovie.Services.csproj", "{6B5CCB8A-1352-42AA-884E-28C7EA50B213}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{67C22C77-C100-4DFD-B690-C2251F03C635}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C22C77-C100-4DFD-B690-C2251F03C635}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C22C77-C100-4DFD-B690-C2251F03C635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154D3FDD-D4BE-4274-8D6C-67F4D2631900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154D3FDD-D4BE-4274-8D6C-67F4D2631900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154D3FDD-D4BE-4274-8D6C-67F4D2631900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154D3FDD-D4BE-4274-8D6C-67F4D2631900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5CCB8A-1352-42AA-884E-28C7EA50B213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5CCB8A-1352-42AA-884E-28C7EA50B213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5CCB8A-1352-42AA-884E-28C7EA50B213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5CCB8A-1352-42AA-884E-28C7EA50B213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

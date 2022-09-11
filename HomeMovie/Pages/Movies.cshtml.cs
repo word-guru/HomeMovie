@@ -1,16 +1,15 @@
 using HomeMovie.Models;
-using HomeMovie.Repozitories.Interfaces;
-using Microsoft.AspNetCore.Mvc;
+using HomeMovie.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace HomeMovie.Pages
 {
     public class MoviesModel : PageModel
     {
-        private readonly IMovieRepozitori _movieRepozitory;
+        private readonly IRepozitory _movieRepozitory;
         public List<Movie> _movies { get; set; }
 
-        public MoviesModel(IMovieRepozitori movieRepozitory)
+        public MoviesModel(IRepozitory movieRepozitory)
         {
             _movieRepozitory = movieRepozitory;
             _movies = new List<Movie>();

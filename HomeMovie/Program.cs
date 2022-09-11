@@ -1,12 +1,12 @@
-using HomeMovie.Repozitories;
-using HomeMovie.Repozitories.Interfaces;
+using HomeMovie.Services;
+using HomeMovie.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddTransient<IMovieRepozitori, MovieRepozitory>();
+builder.Services.AddTransient<IRepozitory, MovieRepozitory>();
 
 var app = builder.Build();
 

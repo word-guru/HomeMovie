@@ -4,27 +4,32 @@
     ViewData["Title"] = "Posters";
 }
 
-<div class="text-centr">
-    <h1 class="display-4">Movies</h1>
-</div>
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th>Title</th>          
-            <th>Session</th>
-            <th></th>
-        </tr>
-    </thead>
-    @foreach (var movie in Model._movies)
+<h1>Афиша</h1>
+
+<div class="row">
+     @foreach (var movie in Model._movies)
     {
-        <tr>
-            <td>@movie.Name</td>
-           
-                @foreach(var _time in movie.Session)
-                {
-                    <td>@_time</td>
-                }
-        </tr>
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-deck">
+                <div class="card m-3">
+                    <div class="card-header text-center">
+                        <h3>@movie.Name</h3>
+                    </div>
+                    <div class="text-center">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h4>Сеансы</h4></li>
+                            @foreach(var _time in movie.Session)
+                            {
+                                <li class="list-group-item">@_time</li>
+                                
+                            }
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-page="/Details" asp-route-ID="@movie.Id" class="btn btn-success m-1">Детали</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     }
-</table>
+</div>
